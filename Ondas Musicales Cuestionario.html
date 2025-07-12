@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Ondas Musicales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://i.pinimg.com/1200x/b6/d3/9c/b6d39cfa3b55682a485e7b60df7729df.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 20px;
+      max-width: 900px;
+      margin: 30px auto;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 48px;
+    }
+    h2 {
+      text-align: center;
+      color: #ffffff;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .boton {
+      display: inline-block;
+      background-color: #ff4cc3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .boton-redireccion {
+      display: inline-block;
+      margin-top: 20px;
+      background: #ff4cc3;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .resultado {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .resultado h2 {
+      color: #ffffff;
+    }
+    .problema {
+      margin-bottom: 30px;
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .problema strong {
+      font-size: 22px;
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cuestionario de Ondas Musicales</h1>
+    <div class="problema">
+      <strong>   Problematica</strong>
+       Muchas personas sufren de estrés debido a la rutina diaria, lo cual afecta tanto su salud física como mental. Las presiones constantes del trabajo, el estudio y la falta de descanso generan ansiedad, fatiga y dificultades para concentrarse. Por eso, es necesario buscar métodos alternativos y accesibles que ayuden a relajar la mente y recuperar el equilibrio emocional, como el uso de la música y sus diferentes frecuencias.    </div>
+    <form id="quizForm">
+      <div class="question">
+        <p>Nombre:</p>
+        <input type="text" name="nombre" required />
+        <p>Correo electrónico:</p>
+        <input type="email" name="correo" required />
+      </div>
+
+<div class="question">
+  <p>1. ¿Cómo te sientes al despertar?</p>
+  <label><input type="radio" name="q1" value="alfa" required /> Tranquilo/a</label><br />
+  <label><input type="radio" name="q1" value="beta" /> Activo/a</label><br />
+  <label><input type="radio" name="q1" value="delta" /> Fatigado/a</label><br />
+  <label><input type="radio" name="q1" value="theta" /> Cansado/a</label><br />
+</div>
+
+<div class="question">
+  <p>2. ¿Cómo reaccionas ante una situación estresante?</p>
+  <label><input type="radio" name="q2" value="beta" required /> Busco soluciones rápidas</label><br />
+  <label><input type="radio" name="q2" value="alfa" /> Intento relajarme</label><br />
+  <label><input type="radio" name="q2" value="theta" /> Me aíslo profundamente</label><br />
+  <label><input type="radio" name="q2" value="delta" /> Me cuesta reaccionar</label><br />
+</div>
+
+<div class="question">
+  <p>3. ¿Qué tipo de música prefieres?</p>
+  <label><input type="radio" name="q3" value="beta" required /> Energética</label><br />
+  <label><input type="radio" name="q3" value="alfa" /> Relajante</label><br />
+  <label><input type="radio" name="q3" value="theta" /> Lenta</label><br />
+  <label><input type="radio" name="q3" value="gamma" /> Instrumental compleja</label><br />
+</div>
+
+<div class="question">
+  <p>4. ¿Con qué frecuencia escuchas música durante el día?</p>
+  <label><input type="radio" name="q4" value="alfa" required /> Casi todo el día</label><br />
+  <label><input type="radio" name="q4" value="beta" /> Varias veces</label><br />
+  <label><input type="radio" name="q4" value="theta" /> Muy poco</label><br />
+  <label><input type="radio" name="q4" value="delta" /> Solo cuando estoy estresado/a</label><br />
+</div>
+
+<div class="question">
+  <p>5. ¿Has probado música binaural o frecuencias especiales?</p>
+  <label><input type="radio" name="q5" value="theta" required /> Sí, para meditar</label><br />
+  <label><input type="radio" name="q5" value="delta" /> Sí, para dormir</label><br />
+  <label><input type="radio" name="q5" value="beta" /> No</label><br />
+  <label><input type="radio" name="q5" value="gamma" /> Sí, por curiosidad</label><br />
+</div>
+
+<div class="question">
+  <p>6. ¿Qué tipo de sonidos prefieres?</p>
+  <label><input type="radio" name="q6" value="alfa" required /> Naturaleza</label><br />
+  <label><input type="radio" name="q6" value="gamma" /> Electrónicos</label><br />
+  <label><input type="radio" name="q6" value="beta" /> Rítmicos y rápidos</label><br />
+  <label><input type="radio" name="q6" value="theta" /> Ambientales y espaciales</label><br />
+</div>
+
+<div class="question">
+  <p>7. ¿Te mueves al ritmo de la música?</p>
+  <label><input type="radio" name="q7" value="beta" required /> Siempre</label><br />
+  <label><input type="radio" name="q7" value="theta" /> A veces</label><br />
+  <label><input type="radio" name="q7" value="delta" /> Casi nunca</label><br />
+  <label><input type="radio" name="q7" value="alfa" /> Solo si estoy solo/a</label><br />
+</div>
+
+<div class="question">
+  <p>8. ¿Has sentido que la música cambia tu percepción del tiempo?</p>
+  <label><input type="radio" name="q8" value="theta" required /> Sí</label><br />
+  <label><input type="radio" name="q8" value="beta" /> No</label><br />
+  <label><input type="radio" name="q8" value="delta" /> A veces me pierdo en ella</label><br />
+  <label><input type="radio" name="q8" value="gamma" /> Solo en sesiones largas</label><br />
+</div>
+
+<div class="question">
+  <p>9. ¿Sientes vibraciones con la música?</p>
+  <label><input type="radio" name="q9" value="gamma" required /> Sí, intensamente</label><br />
+  <label><input type="radio" name="q9" value="theta" /> A veces</label><br />
+  <label><input type="radio" name="q9" value="delta" /> Solo con volumen alto</label><br />
+  <label><input type="radio" name="q9" value="alfa" /> Son como caricias</label><br />
+</div>
+
+<div class="question">
+  <p>10. ¿Qué efecto buscas al escuchar música?</p>
+  <label><input type="radio" name="q10" value="alfa" required /> Relajarme o inspirarme</label><br />
+  <label><input type="radio" name="q10" value="beta" /> Activarme y concentrarme</label><br />
+  <label><input type="radio" name="q10" value="delta" /> Dormir profundamente</label><br />
+  <label><input type="radio" name="q10" value="theta" /> Desconectarme del entorno</label><br />
+</div>
+
+
+      <button type="submit" class="boton">Ver Resultado</button>
+    </form>
+
+    <div id="resultado" class="resultado" style="display:none"></div>
+  </div>
+
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const form = event.target;
+      const data = new FormData(form);
+      let conteo = { alfa: 0, beta: 0, theta: 0, delta: 0, gamma: 0 };
+
+      for (let [key, value] of data.entries()) {
+        if (conteo.hasOwnProperty(value)) conteo[value]++;
+      }
+
+      if (Array.from(data.keys()).length < 12) {
+        alert("Por favor, responde todas las preguntas.");
+        return;
+      }
+
+      const tipoOnda = Object.keys(conteo).reduce((a, b) => conteo[a] > conteo[b] ? a : b);
+
+      let descripcion = '';
+      switch (tipoOnda) {
+        case 'alfa':
+          descripcion = 'Eres una persona equilibrada y enfocada. La música con frecuencias alfa estimula tu creatividad y concentración relajada.';
+          break;
+        case 'beta':
+          descripcion = 'Eres una persona activa y productiva. Las ondas beta te ayudan a mantenerte despierto y concentrado.';
+          break;
+        case 'theta':
+          descripcion = 'Tienes una mente introspectiva y relajada. Las ondas theta son ideales para meditación y conexión interna.';
+          break;
+        case 'delta':
+          descripcion = 'Necesitas descanso profundo. Las ondas delta te ayudarán a dormir mejor y regenerarte.';
+          break;
+        case 'gamma':
+          descripcion = 'Tienes alta capacidad cognitiva. Las ondas gamma estimulan tu enfoque, aprendizaje y memoria.';
+          break;
+      }
+
+      const resultadoDiv = document.getElementById('resultado');
+      resultadoDiv.style.display = 'block';
+      resultadoDiv.innerHTML = `
+        <h2>Tu resultado:</h2>
+        <p>🧠 <strong>Onda dominante: ${tipoOnda.charAt(0).toUpperCase() + tipoOnda.slice(1)}</strong><br />${descripcion}</p>
+        <p>Para más información y conocer más sobre las ondas, visita la siguiente página:</p>
+        <a href="https://lacritaproducciones.github.io/Ondas-Musicales/" class="boton-redireccion">Ir a Ondas Musicales</a>
+      `;
+      resultadoDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
