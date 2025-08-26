@@ -80,15 +80,18 @@
     <div class="container">
   <h1>Cuestionario de Ondas Musicales</h1>
 
+
   <div class="problema">
     <strong>Problemática</strong><br />
     Muchas personas sufren de estrés debido a la rutina diaria, lo cual afecta tanto su salud física como mental. Las presiones constantes del trabajo, el estudio y la falta de descanso generan ansiedad, fatiga y dificultades para concentrarse. Por eso, es necesario buscar métodos alternativos y accesibles que ayuden a relajar la mente y recuperar el equilibrio emocional, como el uso de la música y sus diferentes frecuencias.
   </div>
 
+
   <div class="problema">
     <strong>Hipótesis</strong><br />
     Si los usuarios se sumergen en la experiencia de BrainSond y escuchan sus ondas musicales especialmente diseñadas, podrán alcanzar un estado de calma profunda que reducirá notablemente sus niveles de estrés, mientras sus mentes se vuelven más ágiles y enfocadas, logrando así una concentración renovada y un rendimiento mental más claro.
   </div>
+
 
   <div class="problema">
     <strong>Variables</strong><br /><br />
@@ -100,6 +103,7 @@
     <em>Mejora de la concentración:</em> Se relaciona con el impacto de las ondas musicales en la capacidad de los usuarios para mantener la atención en una tarea, pensar con mayor claridad y evitar distracciones. El objetivo es que, tras usar la plataforma, la mente esté más enfocada y activa para el estudio o el trabajo.
   </div>
 
+
     <form id="quizForm">
       <div class="question">
         <p>Nombre:</p>
@@ -108,21 +112,25 @@
         <input type="email" name="correo" required />
       </div>
 
-<div class="question">
-  <p>1. ¿Cómo te sientes al despertar?</p>
-  <label><input type="radio" name="q1" value="alfa" required /> Tranquilo/a</label><br />
-  <label><input type="radio" name="q1" value="beta" /> Activo/a</label><br />
-  <label><input type="radio" name="q1" value="delta" /> Fatigado/a</label><br />
-  <label><input type="radio" name="q1" value="theta" /> Cansado/a</label><br />
-</div>
 
-<div class="question">
+      <!-- Preguntas 1 a 10 (no toqué nada de esto) -->
+      <div class="question">
+        <p>1. ¿Cómo te sientes al despertar?</p>
+        <label><input type="radio" name="q1" value="alfa" required /> Tranquilo/a</label><br />
+        <label><input type="radio" name="q1" value="beta" /> Activo/a</label><br />
+        <label><input type="radio" name="q1" value="delta" /> Fatigado/a</label><br />
+        <label><input type="radio" name="q1" value="theta" /> Cansado/a</label><br />
+      </div>
+
+
+      <div class="question">
   <p>2. ¿Cómo reaccionas ante una situación estresante?</p>
   <label><input type="radio" name="q2" value="beta" required /> Busco soluciones rápidas</label><br />
   <label><input type="radio" name="q2" value="alfa" /> Intento relajarme</label><br />
   <label><input type="radio" name="q2" value="theta" /> Me aíslo profundamente</label><br />
   <label><input type="radio" name="q2" value="delta" /> Me cuesta reaccionar</label><br />
 </div>
+
 
 <div class="question">
   <p>3. ¿Qué tipo de música prefieres?</p>
@@ -132,6 +140,7 @@
   <label><input type="radio" name="q3" value="gamma" /> Instrumental compleja</label><br />
 </div>
 
+
 <div class="question">
   <p>4. ¿Con qué frecuencia escuchas música durante el día?</p>
   <label><input type="radio" name="q4" value="alfa" required /> Casi todo el día</label><br />
@@ -139,6 +148,7 @@
   <label><input type="radio" name="q4" value="theta" /> Muy poco</label><br />
   <label><input type="radio" name="q4" value="delta" /> Solo cuando estoy estresado/a</label><br />
 </div>
+
 
 <div class="question">
   <p>5. ¿Has probado música binaural o frecuencias especiales?</p>
@@ -148,6 +158,7 @@
   <label><input type="radio" name="q5" value="gamma" /> Sí, por curiosidad</label><br />
 </div>
 
+
 <div class="question">
   <p>6. ¿Qué tipo de sonidos prefieres?</p>
   <label><input type="radio" name="q6" value="alfa" required /> Naturaleza</label><br />
@@ -155,6 +166,7 @@
   <label><input type="radio" name="q6" value="beta" /> Rítmicos y rápidos</label><br />
   <label><input type="radio" name="q6" value="theta" /> Ambientales y espaciales</label><br />
 </div>
+
 
 <div class="question">
   <p>7. ¿Te mueves al ritmo de la música?</p>
@@ -164,6 +176,7 @@
   <label><input type="radio" name="q7" value="alfa" /> Solo si estoy solo/a</label><br />
 </div>
 
+
 <div class="question">
   <p>8. ¿Has sentido que la música cambia tu percepción del tiempo?</p>
   <label><input type="radio" name="q8" value="theta" required /> Sí</label><br />
@@ -171,6 +184,7 @@
   <label><input type="radio" name="q8" value="delta" /> A veces me pierdo en ella</label><br />
   <label><input type="radio" name="q8" value="gamma" /> Solo en sesiones largas</label><br />
 </div>
+
 
 <div class="question">
   <p>9. ¿Sientes vibraciones con la música?</p>
@@ -180,38 +194,59 @@
   <label><input type="radio" name="q9" value="alfa" /> Son como caricias</label><br />
 </div>
 
-<div class="question">
-  <p>10. ¿Qué efecto buscas al escuchar música?</p>
-  <label><input type="radio" name="q10" value="alfa" required /> Relajarme o inspirarme</label><br />
-  <label><input type="radio" name="q10" value="beta" /> Activarme y concentrarme</label><br />
-  <label><input type="radio" name="q10" value="delta" /> Dormir profundamente</label><br />
-  <label><input type="radio" name="q10" value="theta" /> Desconectarme del entorno</label><br />
-</div>
+
+
+
+      <div class="question">
+        <p>10. ¿Qué efecto buscas al escuchar música?</p>
+        <label><input type="radio" name="q10" value="alfa" required /> Relajarme o inspirarme</label><br />
+        <label><input type="radio" name="q10" value="beta" /> Activarme y concentrarme</label><br />
+        <label><input type="radio" name="q10" value="delta" /> Dormir profundamente</label><br />
+        <label><input type="radio" name="q10" value="theta" /> Desconectarme del entorno</label><br />
+      </div>
 
 
       <button type="submit" class="boton">Ver Resultado</button>
     </form>
 
+
     <div id="resultado" class="resultado" style="display:none"></div>
   </div>
 
+
   <script>
+    const webAppUrl = "https://script.google.com/macros/s/AKfycbzbY3-qXE4eJ99eLIEtxJaecAAHRJbsENJHYrqPoGXz-XGt9QI89w4rMgdhqxuj8fyV/exec";
+
+
+    // 🔹 Función para obtener el texto del label marcado
+    function getSelectedText(name) {
+      const checked = document.querySelector(`input[name="${name}"]:checked`);
+      if (!checked) return "";
+      const label = checked.closest("label");
+      return label ? label.textContent.trim() : checked.value;
+    }
+
+
     document.getElementById("quizForm").addEventListener("submit", function(event) {
       event.preventDefault();
       const form = event.target;
       const data = new FormData(form);
       let conteo = { alfa: 0, beta: 0, theta: 0, delta: 0, gamma: 0 };
 
+
       for (let [key, value] of data.entries()) {
         if (conteo.hasOwnProperty(value)) conteo[value]++;
       }
+
 
       if (Array.from(data.keys()).length < 12) {
         alert("Por favor, responde todas las preguntas.");
         return;
       }
 
+
       const tipoOnda = Object.keys(conteo).reduce((a, b) => conteo[a] > conteo[b] ? a : b);
+
 
       let descripcion = '';
       switch (tipoOnda) {
@@ -232,15 +267,43 @@
           break;
       }
 
+
       const resultadoDiv = document.getElementById('resultado');
       resultadoDiv.style.display = 'block';
       resultadoDiv.innerHTML = `
         <h2>Tu resultado:</h2>
         <p>🧠 <strong>Onda dominante: ${tipoOnda.charAt(0).toUpperCase() + tipoOnda.slice(1)}</strong><br />${descripcion}</p>
-        <p>Para más información y conocer más sobre las ondas, visita la siguiente página:</p>
+        <p>Para más información y conocer más sobre las ondas, visita:</p>
         <a href="https://lacritaproducciones.github.io/Ondas-Musicales/" class="boton-redireccion">Ir a Ondas Musicales</a>
       `;
       resultadoDiv.scrollIntoView({ behavior: 'smooth' });
+
+
+      // 🔹 Ahora se envía el texto del label en lugar de "alfa/beta/etc"
+      const envio = {
+        nombre: data.get('nombre'),
+        correo: data.get('correo'),
+        resultado: tipoOnda,
+        respuesta1: getSelectedText("q1"),
+        respuesta2: getSelectedText("q2"),
+        respuesta3: getSelectedText("q3"),
+        respuesta4: getSelectedText("q4"),
+        respuesta5: getSelectedText("q5"),
+        respuesta6: getSelectedText("q6"),
+        respuesta7: getSelectedText("q7"),
+        respuesta8: getSelectedText("q8"),
+        respuesta9: getSelectedText("q9"),
+        respuesta10: getSelectedText("q10")
+      };
+
+
+      fetch(webAppUrl, {
+        method: "POST",
+        body: JSON.stringify(envio)
+      })
+      .then(res => res.json())
+      .then(resp => console.log("Datos enviados a Google Sheets ✅", resp))
+      .catch(err => console.error("Error al enviar datos:", err));
     });
   </script>
 </body>
